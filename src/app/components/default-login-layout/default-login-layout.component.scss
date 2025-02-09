@@ -7,14 +7,6 @@ main {
   justify-content: center;
   height: 100%;
 
-  .form-section {
-    flex-grow: 0.33;
-
-    h2 {
-      font-size: 1.25rem;
-      font-weight: bold;
-    }
-  }
   .main-section {
     gap: 0.5rem;
 
@@ -28,5 +20,71 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .form-section {
+    flex-grow: 0.33;
+    padding: 0 2.18rem;
+    gap: 2.125rem;
+
+    img {
+      margin-bottom: 1.8rem;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 2.8rem;
+    }
+
+    .btn-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.8rem;
+
+      .divider {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.25rem;
+
+        font-size: 0.8rem;
+        color: $gray-bg;
+        font-weight: 400;
+        text-transform: uppercase;
+
+        div {
+          flex-grow: 1;
+          height: 1px;
+          background-color: $gray-bg;
+        }
+      }
+
+      button {
+        width: 100%;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+        border: none;
+        background: transparent;
+        padding: 0.75rem 1.25rem;
+        box-shadow: 0px 8px 12px 0px #9440ff33;
+        cursor: pointer;
+
+        &.btn-primary {
+          background-color: $primary-color;
+          color: white;
+        }
+
+        &.btn-secondary {
+          border: 1px solid $primary-color;
+          color: $primary-color;
+        }
+      }
+    }
   }
 }
