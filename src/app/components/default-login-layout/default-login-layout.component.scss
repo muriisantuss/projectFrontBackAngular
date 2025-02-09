@@ -10,7 +10,7 @@ main {
   .main-section {
     gap: 0.5rem;
 
-    flex-grow: 1; 
+    flex-grow: 1;
     background-color: $gray-bg;
 
     img {
@@ -86,6 +86,10 @@ main {
         &.btn-secondary {
           border: 1px solid $primary-color;
           color: $primary-color;
+        }
+
+        &:disabled {
+          opacity: 0.8;
         }
       }
     }
